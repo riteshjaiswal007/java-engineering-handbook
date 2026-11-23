@@ -1,4 +1,4 @@
-package org.rktechhub;
+package rktechhub;
 
 import java.util.HashMap;
 import java.util.HashSet;

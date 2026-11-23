@@ -1,4 +1,4 @@
-package org.rktechhub;
+package rktechhub;
 
 public class ArrayProduct {
     public static void main(String[] args) {

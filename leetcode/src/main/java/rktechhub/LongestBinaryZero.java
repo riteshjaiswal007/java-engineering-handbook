@@ -1,4 +1,4 @@
-package org.rktechhub;
+package rktechhub;
 
 public class LongestBinaryZero {
     public static void main(String[] args){

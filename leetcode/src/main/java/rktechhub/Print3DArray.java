@@ -1,4 +1,4 @@
-package org.rktechhub;
+package rktechhub;
 
 public class Print3DArray {
 
