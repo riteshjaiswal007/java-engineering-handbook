@@ -1,0 +1,24 @@
+The five SOLID principles
+Single Responsibility Principle-One class, one responsibility
+In Spring Boot:
+- Controller handles HTTP requests.
+- Service handles business logic.
+- Repository handles database operations.
+- Notification service handles email/SMS.
+--------------------------------------------------------
+Open/Closed Principle-Open for extension, closed for modification
+
+Real-world Spring Boot example: Different payment providers, notification channels
+-------------------------------------------------------------
+Liskov Substitution Principle-Subtypes must be substitutable for their base types
+In payment systems, a RefundablePayment should only be implemented by payment methods that genuinely support refunds.
+Don't force every payment method to support an operation it cannot perform.
+
+
+----------------------------------------------------------
+Interface Segregation Principle-Small, focused interfaces
+BasicPrinter does not support scanning or faxing, but it must implement those methods.
+
+
+---------------------------------------------------------------------------------
+Dependency Inversion Principle-Depend on abstractions, not concrete implementations

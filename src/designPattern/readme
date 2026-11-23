@@ -1,0 +1,40 @@
+3. Quick interview revision table
+Pattern	Category	Main purpose	Common real-world example
+Adapter	Structural	Converts one interface into another	,Third-party API integration
+Facade	Structural	Simplifies complex subsystem access,	Order processing
+Proxy	Structural	Controls access to an object,	Security, caching
+Decorator	Structural	Adds behavior dynamically,	Java I/O streams
+Composite	Structural	Represents object hierarchies,	File system
+Strategy	Behavioral	Switches algorithms,	Payment methods
+Observer	Behavioral	Notifies subscribers,	Event notifications
+State	Behavioral	Changes behavior based on state,	Order lifecycle
+Command	Behavioral	Encapsulates requests,	Undo/redo, task queues
+Template Method	Behavioral	Defines algorithm skeleton,	Data processing
+Iterator	Behavioral	Traverses collections,	Java Iterator
+Chain of Responsibility	Behavioral	Passes requests through handlers,	Spring Security filters
+
+4. Important differences interviewers ask
+Pattern comparison	Key difference
+Adapter vs Facade	Adapter converts an interface; Facade simplifies access to a subsystem.
+Decorator vs Proxy	Decorator adds responsibilities; Proxy controls access.
+Strategy vs State	Strategy selects an algorithm; State changes behavior according to lifecycle state.
+Observer vs Chain of Responsibility	Observer broadcasts notifications; Chain passes a request between handlers.
+Command vs Strategy	Command encapsulates a request; Strategy encapsulates an algorithm.
+Template Method vs Strategy	Template Method uses inheritance; Strategy uses composition.
+Composite vs Decorator	Composite builds tree structures; Decorator wraps an object to add behavior.
+
+5. Where these patterns appear in Spring Boot
+These are particularly useful examples to discuss in a Java Tech Lead or Staff Engineer interview.
+Pattern	Spring / Java example
+Adapter	Spring MVC HandlerAdapter
+Facade	A service coordinating multiple repositories and external services
+Proxy	Spring AOP, @Transactional, method security
+Decorator	Java InputStream wrappers, custom HTTP decorators
+Composite	Hierarchical component structures
+Strategy	PaymentStrategy, Spring's AuthenticationProvider implementations
+Observer	Spring application events, ApplicationListener
+State	Order or workflow lifecycle management
+Command	Task execution and queued operations
+Template Method	JdbcTemplate, RestTemplate
+Iterator	Java Collections Framework
+Chain of Responsibility	Servlet filters, Spring Security filter chain
